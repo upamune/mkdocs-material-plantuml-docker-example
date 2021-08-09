@@ -1,0 +1,6 @@
+site_name: My Docs
+theme:
+  name: material
+markdown_extensions:
+    - plantuml_markdown:
+        format: svg_inline

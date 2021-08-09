@@ -19,16 +19,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Plant UML
 
-```plantuml
-@startuml
-title Authentication Sequence
-    Alice->Bob: Authentication Request
-    note right of Bob: Bob thinks about it
-    Bob->Alice: Authentication Response
-@enduml
-```
-
-## Another
+### Sequence
 
 ```plantuml
 @startuml
@@ -47,5 +38,49 @@ Foo -> Foo4 : To entity
 Foo -> Foo5 : To database
 Foo -> Foo6 : To collections
 Foo -> Foo7: To queue
+@enduml
+```
+
+### Object
+
+```plantuml
+@startuml
+object London
+object Washington
+object Berlin
+object NewYork
+
+map CapitalCity {
+ UK *-> London
+ USA *--> Washington
+ Germany *---> Berlin
+}
+
+NewYork --> CapitalCity::USA
+@enduml
+```
+
+### State machine
+
+```plantuml
+@startuml
+[*] -> State1
+State1 --> State2 : Succeeded
+State1 --> [*] : Aborted
+State2 --> State3 : Succeeded
+State2 --> [*] : Aborted
+state State3 {
+  state "Accumulate Enough Data" as long1
+  long1 : Just a test
+  [*] --> long1
+  long1 --> long1 : New Data
+  long1 --> ProcessData : Enough Data
+  State2 --> [H]: Resume
+}
+State3 --> State2 : Pause
+State2 --> State3[H*]: DeepResume
+State3 --> State3 : Failed
+State3 --> [*] : Succeeded / Save Result
+State3 --> [*] : Aborted
 @enduml
 ```

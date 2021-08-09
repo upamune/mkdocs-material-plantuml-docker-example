@@ -11,7 +11,7 @@ jobs:
       - name: Build Docs
         run: make build
       - name: Deploy to Netlify
-        run: npx netlify-cli deploy --dir=site
+        run: npx netlify-cli deploy --dir=site --prod
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

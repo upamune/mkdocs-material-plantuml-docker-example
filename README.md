@@ -1,5 +1,7 @@
 # mkdocs-material-plantuml-docker-example
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7c921e50-4654-464c-84f7-c961b5be224b/deploy-status)](https://app.netlify.com/sites/mkdocs-material-plantuml-docker-example/deploys)
+
 Example usage of [upamune/mkdocs-material-plantuml-docker](https://github.com/upamune/mkdocs-material-plantuml-docker).
 
 ## Build

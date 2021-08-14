@@ -84,7 +84,50 @@ State3 --> [*] : Aborted
 @enduml
 ```
 
-### Code highligt
+## Mermaid
+
+### Sequence
+
+```mermaid
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail!
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
+```
+
+
+### Gantt
+
+```mermaid
+gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+excludes weekdays 2014-01-10
+
+section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2               :         des4, after des3, 5d
+```
+
+### ER Diagram
+
+```mermaid
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+```
+
+## Code highligt
 
 ```go
 func main() {
@@ -102,11 +145,22 @@ def bubble_sort(items):
                 items[j], items[j + 1] = items[j + 1], items[j]
 ```
 
-### Emoji
+## Footnotes
+
+Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2]
+
+[^1]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+[^2]:
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+## Emoji
 
 :smiley_cat: :material-twitch: :material-youtube: :fontawesome-brands-twitter-square:
 
-### Def list
+## Def list
 
 `Lorem ipsum dolor sit ameggt`
 :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
@@ -120,7 +174,7 @@ def bubble_sort(items):
     Nam vulputate tincidunt fringilla.
     Nullam dignissim ultrices urna non auctor.
 
-### Task lists
+## Task lists
 
 - [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
 - [ ] Vestibulum convallis sit amet nisi a tincidunt
@@ -128,3 +182,37 @@ def bubble_sort(items):
     * [x] In scelerisque nibh non dolor mollis congue sed et metus
     * [ ] Praesent sed risus massa
 - [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
+
+
+## Keys
+
+++ctrl+alt+delete++
+
+
+## Magic Link
+
+- Just paste links directly in the document like this: https://google.com.
+- Or even an email address: fake.email@email.com.
+
+## Progress Bar
+
+[=0% "0%"]
+[=5% "5%"]
+[=25% "25%"]
+[=45% "45%"]
+[=65% "65%"]
+[=85% "85%"]
+[=100% "100%"]
+
+---
+
+[=85% "85%"]{: .candystripe}
+[=100% "100%"]{: .candystripe .candystripe-animate}
+
+[=0%]{: .thin}
+[=5%]{: .thin}
+[=25%]{: .thin}
+[=45%]{: .thin}
+[=65%]{: .thin}
+[=85%]{: .thin}
+[=100%]{: .thin}

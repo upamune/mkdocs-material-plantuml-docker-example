@@ -1,6 +1,9 @@
 site_name: My Docs
 theme:
   name: material
+repo_url: https://github.com/upamune/mkdocs-material-plantuml-docker-example
+repo_name: upamune/mkdocs-material-plantuml-docker-example
+
 markdown_extensions:
     - attr_list
     - admonition
@@ -14,9 +17,24 @@ markdown_extensions:
     - pymdownx.keys
     - pymdownx.highlight:
         linenums: true
-    - pymdownx.superfences
+    - pymdownx.superfences:
+        custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_div_format
     - pymdownx.tasklist:
         custom_checkbox: true
         clickable_checkbox: true
+    - pymdownx.progressbar
+    - pymdownx.magiclink
     - plantuml_markdown:
         format: svg_inline
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - https://unpkg.com/mermaid@8.11.4/dist/mermaid.min.js
+
+plugins:
+  - search

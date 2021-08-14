@@ -11,6 +11,10 @@ docs/serve:
 docs/build:
 	@docker run --rm -v $(pwd):/docs $(BASE_IMAGE_NAME) build
 
+.PHONY: docs/lint
+docs/lint:
+	@docker run --rm -v $(pwd):/tmp node:lts-alpine npx markdownlint-cli --config /tmp/.markdownlint.yaml '/tmp/docs/**/*.md'
+
 .PHONY: image/build
 image/build:
 	@docker build -t $(IMAGE_NAME) .

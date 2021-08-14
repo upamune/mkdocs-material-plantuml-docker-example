@@ -90,7 +90,7 @@ State3 --> [*] : Aborted
 
 ## Mermaid
 
-### Sequence
+### Sequence (Mermaid)
 
 ```mermaid
 sequenceDiagram
@@ -105,7 +105,6 @@ sequenceDiagram
     John->>Bob: How about you?
     Bob-->>John: Jolly good!
 ```
-
 
 ### Gantt
 
@@ -182,7 +181,6 @@ Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2]
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
 
-
 !!! note
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
@@ -205,10 +203,6 @@ Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2]
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
 
-
-
-
-
 ## Emoji
 
 :smiley_cat: :material-twitch: :material-youtube: :fontawesome-brands-twitter-square:
@@ -229,23 +223,21 @@ Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2]
 
 ## Task lists
 
-- [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
-- [ ] Vestibulum convallis sit amet nisi a tincidunt
-    * [x] In hac habitasse platea dictumst
-    * [x] In scelerisque nibh non dolor mollis congue sed et metus
-    * [ ] Praesent sed risus massa
-- [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
-
+* [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
+* [ ] Vestibulum convallis sit amet nisi a tincidunt
+  * [x] In hac habitasse platea dictumst
+  * [x] In scelerisque nibh non dolor mollis congue sed et metus
+  * [ ] Praesent sed risus massa
+* [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
 
 ## Keys
 
 ++ctrl+alt+delete++
 
-
 ## Magic Link
 
-- Just paste links directly in the document like this: https://google.com.
-- Or even an email address: fake.email@email.com.
+* Just paste links directly in the document like this: https://google.com.
+* Or even an email address: fake.email@email.com.
 
 ## Progress Bar
 

@@ -23,6 +23,8 @@ jobs:
           reviewdog_version: latest
       - name: Run textlint
         run: make docs/textlint > textlint.log
+      - name: Show textlint result
+        run: cat textlint.log
       - name: Run reviewdog
         if: failure()
         env:

@@ -3,3 +3,4 @@
 /site
 .vercel
 node_modules
+*.log

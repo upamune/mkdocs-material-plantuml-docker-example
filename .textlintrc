@@ -4,6 +4,8 @@
   },
   "rules": {
     "preset-ja-spacing": true,
-    "preset-ja-technical-writing": true
+    "preset-ja-technical-writing": {
+      "sentence-length": false
+    }
   }
 }

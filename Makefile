@@ -20,7 +20,7 @@ docs/markdownlint:
 
 .PHONY: docs/textlint
 docs/textlint:
-	@docker run --rm -v $(pwd):/tmp node:lts-alpine sh -c "cd tmp && npm install && npx textlint 'docs/**'"
+	@docker run --rm -v $(pwd):/tmp node:lts-alpine sh -c "cd tmp && npm install &>/dev/null && npx textlint 'docs/**'"
 
 .PHONY: image/build
 image/build:

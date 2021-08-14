@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build Docs
-        run: make build
+        run: make docs/build
       - name: Deploy to Netlify
         run: npx netlify-cli deploy --dir=site --prod
         env:

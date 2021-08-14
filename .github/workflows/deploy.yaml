@@ -1,8 +1,6 @@
 name: deploy website
 on:
-  push:
-    branches:
-      - main
+  push
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -11,6 +9,7 @@ jobs:
       - name: Build Docs
         run: make docs/build
       - name: Deploy to Netlify
+        if: github.ref == 'refs/heads/main'
         run: npx netlify-cli deploy --dir=site --prod
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

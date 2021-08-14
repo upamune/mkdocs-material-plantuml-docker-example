@@ -2,3 +2,4 @@
 .envrc
 /site
 .vercel
+node_modules

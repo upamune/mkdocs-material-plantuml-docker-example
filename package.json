@@ -1,0 +1,29 @@
+{
+  "name": "mkdocs-material-plantuml-docker-example",
+  "version": "1.0.0",
+  "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/7c921e50-4654-464c-84f7-c961b5be224b/deploy-status)](https://app.netlify.com/sites/mkdocs-material-plantuml-docker-example/deploys)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/upamune/mkdocs-material-plantuml-docker-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/upamune/mkdocs-material-plantuml-docker-example/issues"
+  },
+  "homepage": "https://github.com/upamune/mkdocs-material-plantuml-docker-example#readme",
+  "devDependencies": {
+    "textlint": "^12.0.2",
+    "textlint-filter-rule-comments": "^1.2.2",
+    "textlint-rule-preset-ja-spacing": "^2.2.0",
+    "textlint-rule-preset-ja-technical-writing": "^7.0.0"
+  }
+}

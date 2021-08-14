@@ -1,6 +1,14 @@
 site_name: My Docs
 theme:
   name: material
+  language: ja
+  features:
+    - navigation.top
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.instant
+    - search.suggest
+    - search.highlight
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -22,6 +30,8 @@ markdown_extensions:
     - def_list
     - footnotes
     - meta
+    - toc:
+        permalink: true
     - pymdownx.details
     - pymdownx.emoji:
         emoji_index: !!python/name:materialx.emoji.twemoji
@@ -49,4 +59,7 @@ extra_javascript:
   - https://unpkg.com/mermaid@8.11.4/dist/mermaid.min.js
 
 plugins:
-  - search
+  - search:
+      lang:
+        - en
+        - ja

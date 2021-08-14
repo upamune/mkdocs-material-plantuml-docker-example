@@ -11,5 +11,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
-          markdownlint_flags: '--config .markdownlint.yaml docs/**/*.md'
+          fail_on_error: true
           level: warning

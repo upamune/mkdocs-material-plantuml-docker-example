@@ -135,7 +135,7 @@ func main() {
 }
 ```
 
-### Highlighting specific lines¶
+### Highlighting specific lines
 
 ``` python hl_lines="2 3"
 def bubble_sort(items):

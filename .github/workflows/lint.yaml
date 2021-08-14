@@ -7,8 +7,9 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: markdownlint
-        uses: reviewdog/action-markdownlint@v0.1
+        uses: reviewdog/action-markdownlint@v0.2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
           markdownlint_flags: '--config .markdownlint.yaml docs/**/*.md'
+          level: warning

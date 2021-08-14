@@ -228,7 +228,7 @@ Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2]
   * [x] In hac habitasse platea dictumst
   * [x] In scelerisque nibh non dolor mollis congue sed et metus
   * [ ] Praesent sed risus massa
-* [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
+- [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
 
 ## Keys
 
@@ -236,7 +236,12 @@ Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2]
 
 ## Magic Link
 
+
+
 * Just paste links directly in the document like this: https://google.com.
+
+## Keys
+
 * Or even an email address: fake.email@email.com.
 
 ## Progress Bar

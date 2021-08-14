@@ -1,11 +1,24 @@
-IMAGE_NAME := upamune/mkdocs-material-plantuml:latest
+BASE_IMAGE_NAME := upamune/mkdocs-material-plantuml:latest
+IMAGE_NAME := upamune/mkdocs-material-plantuml-example:latest
+
 pwd := $(shell pwd)
 
-.PHONY: serve
-serve:
-	@docker run --rm -p 8000:8000 -v $(pwd):/docs $(IMAGE_NAME)
+.PHONY: docs/serve
+docs/serve:
+	@docker run --rm -p 8000:8000 -v $(pwd):/docs $(BASE_IMAGE_NAME)
 
-.PHONY: build
-build:
-	@docker run --rm -v $(pwd):/docs $(IMAGE_NAME) build
+.PHONY: docs/build
+docs/build:
+	@docker run --rm -v $(pwd):/docs $(BASE_IMAGE_NAME) build
 
+.PHONY: image/build
+image/build:
+	@docker build -t $(IMAGE_NAME) .
+
+.PHONY: image/run
+image/run: image/build
+	@docker run --rm -p 8080:8080 $(IMAGE_NAME)
+
+.PHONY: image/lint
+image/lint:
+	@hadolint ./Dockerfile

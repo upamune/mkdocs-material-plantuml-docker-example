@@ -1,4 +1,4 @@
-FROM ghcr.io/upamune/mkdocs-material-plantuml:v0.0.2 AS builder
+FROM ghcr.io/upamune/mkdocs-material-plantuml:v0.0.3 AS builder
 
 COPY ./docs /docs/docs
 COPY ./mkdocs.yml /docs

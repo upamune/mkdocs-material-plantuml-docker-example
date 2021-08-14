@@ -17,14 +17,13 @@ jobs:
     name: runner / textlint
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
       - uses: reviewdog/action-setup@v1
         with:
           reviewdog_version: latest
+      - uses: actions/checkout@v1
+      - run: npm install
       - name: Run textlint
-        run: make docs/textlint > textlint.log
-      - name: Show textlint result
-        run: cat textlint.log
+        run: npx textlint -f checkstyle "docs/**" > textlint.log
       - name: Run reviewdog
         if: failure()
         env:

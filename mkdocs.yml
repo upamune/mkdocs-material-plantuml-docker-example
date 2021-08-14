@@ -2,5 +2,21 @@ site_name: My Docs
 theme:
   name: material
 markdown_extensions:
+    - attr_list
+    - admonition
+    - def_list
+    - footnotes
+    - meta
+    - pymdownx.details
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.keys
+    - pymdownx.highlight:
+        linenums: true
+    - pymdownx.superfences
+    - pymdownx.tasklist:
+        custom_checkbox: true
+        clickable_checkbox: true
     - plantuml_markdown:
         format: svg_inline

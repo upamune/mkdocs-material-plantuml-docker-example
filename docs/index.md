@@ -83,3 +83,48 @@ State3 --> [*] : Succeeded / Save Result
 State3 --> [*] : Aborted
 @enduml
 ```
+
+### Code highligt
+
+```go
+func main() {
+    fmt.Println("hoge")
+}
+```
+
+### Highlighting specific lines¶
+
+``` python hl_lines="2 3"
+def bubble_sort(items):
+    for i in range(len(items)):
+        for j in range(len(items) - 1 - i):
+            if items[j] > items[j + 1]:
+                items[j], items[j + 1] = items[j + 1], items[j]
+```
+
+### Emoji
+
+:smiley_cat: :material-twitch: :material-youtube: :fontawesome-brands-twitter-square:
+
+### Def list
+
+`Lorem ipsum dolor sit ameggt`
+:   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
+    tellus non sem sollicitudin, quis rutrum leo facilisis.
+
+`Cras arcu libero`
+:   Aliquam metus eros, pretium sed nulla venenatis, faucibus auctor ex. Proin
+    ut eros sed sapien ullamcorper consequat. Nunc ligula ante.
+
+    Duis mollis est eget nibh volutpat, fermentum aliquet dui mollis.
+    Nam vulputate tincidunt fringilla.
+    Nullam dignissim ultrices urna non auctor.
+
+### Task lists
+
+- [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
+- [ ] Vestibulum convallis sit amet nisi a tincidunt
+    * [x] In hac habitasse platea dictumst
+    * [x] In scelerisque nibh non dolor mollis congue sed et metus
+    * [ ] Praesent sed risus massa
+- [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque

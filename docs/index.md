@@ -237,9 +237,6 @@ Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2]
 ## Magic Link
 
 * Just paste links directly in the document like this: https://google.com.
-
-## Keys
-
 * Or even an email address: fake.email@email.com.
 
 ## Progress Bar
